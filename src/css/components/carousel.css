@@ -3,7 +3,6 @@ img {
   height: auto;
 }
 
-
 .carousel__controls {
   display: flex;
   gap: 16px;
@@ -26,7 +25,6 @@ img {
   transform: rotate(180deg);
 }
 
-
 .carousel__container {
   display: flex;
   gap: 16px;
@@ -36,13 +34,13 @@ img {
   scroll-snap-type: x mandatory;
   width: 100%;
   padding: 16px 0;
+  box-sizing: border-box;
 }
 
 .carousel__item {
-  flex: 0 0 80%; 
-  max-width: 500px; 
-  min-width: 240px; 
+  flex: 0 0 100%;  
   scroll-snap-align: center;
+  
 }
 
 .carousel__item img {
