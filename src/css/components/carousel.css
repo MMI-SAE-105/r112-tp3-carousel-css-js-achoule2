@@ -39,12 +39,12 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 }
 
 .carousel__container {
-  /* Utilise flexbox pour aligner les éléments enfants - https://developer.mozilla.org/fr/docs/Web/CSS/display */
-  /* Espace entre les éléments enfants 16px - https://developer.mozilla.org/fr/docs/Web/CSS/gap */
-  /* Ajoute un défilement horizontal si le contenu déborde - https://developer.mozilla.org/fr/docs/Web/CSS/overflow */
-  /* Marge négative à gauche pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
-  /* Marge négative à droite pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
-  /* Définit le type de défilement pour accrocher les éléments - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type */
+  display: flex;
+  gap: 16px;
+  overflow-x: scroll;
+  margin-left: -24px;
+  margin-right: -24px;
+  scroll-snap-type: x mandatory;
 }
 
 .carousel__item {
