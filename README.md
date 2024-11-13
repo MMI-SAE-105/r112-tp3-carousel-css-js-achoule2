@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : CHOULET
+- prénom : ADRIEN
+- URL Netlify : https://imaginative-peony-1884a7.netlify.app
 
 # Travail
 

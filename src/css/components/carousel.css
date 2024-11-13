@@ -19,11 +19,11 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 
 /* Compléter la suite du code */
 .carousel__controls {
-  /* Utilise flexbox pour aligner les éléments enfants - https://developer.mozilla.org/fr/docs/Web/CSS/display */
-  /* Espace entre les éléments enfants 16px- https://developer.mozilla.org/fr/docs/Web/CSS/gap */
-  /* Aligne les éléments enfants au centre verticalement - https://developer.mozilla.org/fr/docs/Web/CSS/align-items */
-  /* Centre les éléments enfants horizontalement - https://developer.mozilla.org/fr/docs/Web/CSS/justify-content */
-  /* Marge de 16px en haut et en bas - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
 }
 .carousel__button {
   /* Largeur du bouton 50px - https://developer.mozilla.org/fr/docs/Web/CSS/width */
