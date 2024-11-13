@@ -1,23 +1,9 @@
-/* Limite la largeur maximale de l'image à 100% de son conteneur - https://developer.mozilla.org/fr/docs/Web/CSS/max-width */
-/* Ajuste la hauteur de l'image automatiquement pour conserver les proportions - https://developer.mozilla.org/fr/docs/Web/CSS/height */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Mise en forme du carousel en CSS.
-Utiliser flex pour positionner les item du carousel les uns à coté des autres.
-La propriété "overflow-x" avec la valeur "scroll" permet rogner le contenu afin de tenir horizontalement dans la boîte de remplissage et d'ajouter un scroll horizontal si le contenu déborde.
-https://developer.mozilla.org/fr/docs/Web/CSS/overflow-x
 
-La propriété "scroll-snap-type" définit la force d'adhérence aux points d'accroche en cas de défilement d'un conteneur
-https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type
-
-Les margin négatifs à gauche et à droite corresponde à l'éespace entre le navigateur et le début du contenu, de sorte que le carousel soit collé au bords de l'écran.
-
-*/
-
-/* Compléter la suite du code */
 .carousel__controls {
   display: flex;
   gap: 16px;
@@ -25,6 +11,7 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   justify-content: center;
   margin: 16px 0;
 }
+
 .carousel__button {
   width: 50px;
   height: 50px;
@@ -34,9 +21,11 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   border: 1px solid #ccc;
   border-radius: 50%;
 }
+
 .carousel__button--prev {
   transform: rotate(180deg);
 }
+
 
 .carousel__container {
   display: flex;
@@ -45,13 +34,20 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   margin-left: -24px;
   margin-right: -24px;
   scroll-snap-type: x mandatory;
+  width: 100%;
+  padding: 16px 0;
 }
 
 .carousel__item {
-  flex: 0 0 260px;
+  flex: 0 0 80%; 
+  max-width: 500px; 
+  min-width: 240px; 
   scroll-snap-align: center;
 }
 
 .carousel__item img {
   display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
 }
