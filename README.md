@@ -166,3 +166,19 @@ Changer les CSS pour que les tailles d'items (images) soit proportionelle à la 
 Tester que le scroll et les boutons fonctionne toujours de façon satisfaisante.
 
 **Faire commit** : Carrousel avec taille d'image responsive
+
+## Carrousel avec ancres
+
+Ajouter une liste de lien avec ancres vers les éléments du carousel
+
+Tester le bon défilement au clic sur les ancres
+
+**Faire commit** : Carrousel avec tancre
+
+## Carrousel avec btn sur les éléments
+
+Changer les CSS pour que les boutons gauche/droite soient sur le carousel (`position:absolute;`)
+
+Tester que le scroll et les boutons (gauche/doite) fonctionnent toujours de façon satisfaisante.
+
+**Faire commit** : Carrousel avec btn absolue
