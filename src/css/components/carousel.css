@@ -40,7 +40,6 @@ img {
 .carousel__item {
   flex: 0 0 100%;  
   scroll-snap-align: center;
-  
 }
 
 .carousel__item img {
@@ -48,4 +47,27 @@ img {
   width: 100%;
   height: auto;
   border-radius: 8px; 
+}
+
+.carousel__nav {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.carousel__nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.carousel__nav a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.carousel__nav a:hover {
+  text-decoration: underline;
 }
